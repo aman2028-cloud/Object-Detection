@@ -5,6 +5,10 @@ It allows users to upload an image and detects objects within it using a pre-tra
 
 ---
 
+## 🔗 Live Demo
+👉 [Check the Project Here](https://object-det.streamlit.app/)  
+---
+
 ## 🚀 Features
 - Upload an image and perform real-time **object detection**  
 - Built with **TensorFlow** for deep learning  
@@ -15,7 +19,11 @@ It allows users to upload an image and detects objects within it using a pre-tra
 ---
 
 ## 🛠️ Tech Stack
-- **Python 3.10**  
+- **Python 3.8+**  
 - **TensorFlow / Keras** (Deep Learning Model)  
 - **Streamlit** (Web App Framework)  
 - **OpenCV / Pillow** (Image Processing)  
+
+---
+
+## 📂 Project Structure
