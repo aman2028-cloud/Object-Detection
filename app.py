@@ -54,8 +54,8 @@ cifar10_labels = [
 # ======================
 # Streamlit UI
 # ======================
-st.title("🧠 CIFAR-10 Image Classifier")
-st.write("Upload an image (32x32 or larger) for classification.")
+st.title("CIFAR-10 Image Classifier")
+st.write("Upload an image  for classification.")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
@@ -65,7 +65,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("RGB")
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
-    with st.spinner("Classifying..."):
+    with st.spinner("Classifying.."):
         pred_class, conf = predict(image)
         st.success(f"**Prediction:** {cifar10_labels[pred_class]} ({conf*100:.2f}% confidence)")
 
